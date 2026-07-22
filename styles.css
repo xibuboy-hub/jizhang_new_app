@@ -60,24 +60,3 @@ button { padding:8px 12px; border:none; background:#0078D4; color:white; border-
 .history-entry { padding:8px; border-bottom:1px dashed #eee; }
 .history-entry .meta { color:#666; font-size:12px; margin-bottom:6px; }
 .history-entry pre { background:#f7f7f7; padding:8px; border-radius:4px; overflow:auto; font-size:12px; }
-
-/* Debug 面板样式（固定右上角） */
-.debug-panel {
-  position: fixed;
-  right: 12px;
-  top: 12px;
-  width: 340px;
-  max-height: 60vh;
-  overflow: auto;
-  background: #222;
-  color: #fff;
-  border-radius: 8px;
-  padding: 8px;
-  z-index: 3000;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-  font-size: 13px;
-}
-.debug-panel h3 { margin: 0 0 8px 0; font-size: 14px; }
-.debug-buttons { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:8px; }
-.debug-buttons button { background:#555; color:#fff; padding:6px 8px; border-radius:4px; font-size:12px; }
-.dbg-output { background:#111; color:#0f0; padding:8px; border-radius:4px; min-height:120px; white-space:pre-wrap; font-family: monospace; font-size:12px; }
