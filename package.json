@@ -1,0 +1,29 @@
+{
+  "name": "desktop-bookkeeping",
+  "version": "1.0.0",
+  "description": "桌面记账示例（Electron）— 收入/支出，两级分类，导出 CSV",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win",
+    "win:pkg": "npm run build"
+  },
+  "devDependencies": {
+    "electron": "^26.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.example.desktopbookkeeping",
+    "productName": "记账小助手",
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ],
+      "icon": "build/icon.ico"
+    }
+  }
+}
